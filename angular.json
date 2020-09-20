@@ -117,8 +117,16 @@
               "devServerTarget": "goGym:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "goGym"
+    }
+  },
+  "defaultProject": "goGym",
+  "cli": {
+    "analytics": "59be9784-6667-420e-990f-bd1f8cce5a5d"
+  }
 }
