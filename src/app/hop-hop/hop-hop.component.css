@@ -1,0 +1,29 @@
+.hopHop { 
+    animation: hopHop 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;}
+   @keyframes hopHop{
+    0%{transform: translate(20px, -30px)}
+    5%{transform: translate(40px, 0px)}     
+   10%{transform: translate(60px, 30px)}
+   15%{transform: translate(80px,0px)} 
+   20%{transform: translate(100px,-30px)}
+   25%{transform: translate(120px, 0px)} 
+   30%{transform: translate(140px, 30px)}
+   35%{transform: translate(160px, 0px)}  
+   40%{transform: translate(180px, -30px)}  
+   45%{transform: translate(200px, 0px)}   
+   50%{transform: translate(220px, 30px)}
+   55%{transform: translate(240px, 0px)}
+   60%{transform: translate(260px, -30px)}
+   65%{transform: translate(280px, 0px)}
+   70%{transform: translate(300px, 30px)}
+   75%{transform: translate(320px, 0px)}
+   80%{transform: translate(340px, -30px)}
+   85%{transform: translate(360px, 0px)}
+   90%{transform: translate(380px, 30px)}
+   95%{transform: translate(400px, 0px)}
+   100%{transform: translate(420px, -30px)}    
+  }
+
+  

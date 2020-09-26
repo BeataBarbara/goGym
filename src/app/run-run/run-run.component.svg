@@ -1,0 +1,26 @@
+<svg height="200" width="600" >
+  <g #men (click)="abc()">
+     <line id="body" x1="50" y1="70" x2="50" y2="120" style="stroke:black;stroke-width:2"/>
+     <circle id="head" cx="50", cy="65", r="11"  style="fill:black"/>
+   <g id="pos1" style="fill:none;stroke:black;stroke-width:2">
+    <polyline points="35,125 50,90 65, 125"></polyline>
+    <polyline points="40,165 50,120 60, 165"></polyline>
+   </g>
+   <g id="pos2" class="hide" style="fill:none;stroke:black;stroke-width:2">
+    <polyline points="35,125 50,90 68,95 75, 75"></polyline>
+    <polyline points="40,165 50,120 73, 120 85,145" ></polyline>
+   </g>
+   <g id="pos3" class="hide" style="fill:none;stroke:black;stroke-width:2">
+    <polyline points="26,111 32,93 50,90 68,91 75, 71"></polyline>
+    <polyline points="26, 160 53,139 50,120 69, 135 64,160" ></polyline>
+   </g>
+   <g id="pos4" class="hide" style="fill:none;stroke:black;stroke-width:2">
+    <polyline points="26,71 32,93 50,90 68,91 75, 111"></polyline>
+    <polyline points="33, 165 55,142 50,120 65, 138 61,168" ></polyline>
+   </g>
+   <g id="pos5" class="hide" style="fill:none;stroke:black;stroke-width:2">
+    <polyline points="20,75 35,91 50,90 65,125"></polyline>
+    <polyline points="25, 160 51,145 50,120 65, 165"></polyline>
+   </g>
+    </g>
+</svg>

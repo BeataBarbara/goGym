@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy on ghp": "ng build --prod && ng build --prod --base-href  https://beatabarbara.github.io/goGym/ && ngh --dir dist/goGym"
+    "deploy": "ng build --prod && ng build --prod --base-href  https://beatabarbara.github.io/goGym/ && ngh --dir dist/goGym"
   },
   "private": true,
   "dependencies": {
