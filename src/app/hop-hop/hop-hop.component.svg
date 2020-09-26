@@ -1,3 +1,4 @@
+<p>kliknij na ludzika</p>
 <svg height="200" width="600" (click)='hophop()' #man>
   <g>
     <polyline points="25,70 50,95 75,70"   style="fill:none;stroke:black;stroke-width:3" />

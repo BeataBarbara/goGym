@@ -1,95 +1,112 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-tumble',
-  templateUrl: './tumble.component.html',
+  templateUrl: './tumble.component.svg',
   styleUrls: ['./tumble.component.css']
 })
 export class TumbleComponent implements OnInit {
-
-  constructor() { }
+  @ViewChild('pos1') pos1: ElementRef;
+  @ViewChild('pos2') pos2: ElementRef;
+  @ViewChild('pos3') pos3: ElementRef;
+  @ViewChild('pos4') pos4: ElementRef;
+  @ViewChild('pos5') pos5: ElementRef;
+  @ViewChild('pos6') pos6: ElementRef;
+  @ViewChild('pos7') pos7: ElementRef;
+  @ViewChild('pos8') pos8: ElementRef;
+  @ViewChild('pos9') pos9: ElementRef;
+  @ViewChild('pos10') pos10: ElementRef;
+  @ViewChild('pos11') pos11: ElementRef;
+  @ViewChild('pos12') pos12: ElementRef;
+  @ViewChild('pos13') pos13: ElementRef;
+  @ViewChild('pos14') pos14: ElementRef;
+  @ViewChild('pos15') pos15: ElementRef;
+  @ViewChild('pos16') pos16: ElementRef;
+  @ViewChild('pos17') pos17: ElementRef;
+  @ViewChild('pos18') pos18: ElementRef;
+  @ViewChild('pos19') pos19: ElementRef;
+  @ViewChild('pos20') pos20: ElementRef;
+  @ViewChild('pos21') pos21: ElementRef;
+  @ViewChild('pos22') pos22: ElementRef;
+  @ViewChild('pos23') pos23: ElementRef;
 
   ngOnInit(): void {
+    this.setInt()
   }
-
-
-    // $(function () {
-    //   setInterval(tumble, 80);
-    //  });
-    //  function tumble() {
-    //   if ($("#pos1").attr("class") != "hide") {
-    //    $("#pos1").attr("class", "hide");
-    //    $("#pos2").removeAttr("class");
-    //   } else if ($("#pos2").attr("class") != "hide") {
-    //    $("#pos2").attr("class", "hide");
-    //    $("#pos3").removeAttr("class");
-    //   } else if ($("#pos3").attr("class") != "hide") {
-    //    $("#pos3").attr("class", "hide");
-    //    $("#pos4").removeAttr("class");
-    //   } else if ($("#pos4").attr("class") != "hide") {
-    //    $("#pos4").attr("class", "hide");
-    //    $("#pos5").removeAttr("class");
-    //   } else if ($("#pos5").attr("class") != "hide") {
-    //    $("#pos5").attr("class", "hide");
-    //    $("#pos6").removeAttr("class");
-    //   } else if ($("#pos6").attr("class") != "hide") {
-    //    $("#pos6").attr("class", "hide");
-    //    $("#pos7").removeAttr("class");
-    //   } else if ($("#pos7").attr("class") != "hide") {
-    //    $("#pos7").attr("class", "hide");
-    //    $("#pos8").removeAttr("class");
-    //   } else if ($("#pos8").attr("class") != "hide") {
-    //    $("#pos8").attr("class", "hide");
-    //    $("#pos9").removeAttr("class");
-    //   } else if ($("#pos9").attr("class") != "hide") {
-    //    $("#pos9").attr("class", "hide");
-    //    $("#pos10").removeAttr("class");
-    //   } else if ($("#pos10").attr("class") != "hide") {
-    //    $("#pos10").attr("class", "hide");
-    //    $("#pos11").removeAttr("class");
-    //   } else if ($("#pos11").attr("class") != "hide") {
-    //    $("#pos11").attr("class", "hide");
-    //    $("#pos12").removeAttr("class");
-    //   } else if ($("#pos12").attr("class") != "hide") {
-    //    $("#pos12").attr("class", "hide");
-    //    $("#pos13").removeAttr("class");
-    //   } else if ($("#pos13").attr("class") != "hide") {
-    //    $("#pos13").attr("class", "hide");
-    //    $("#pos14").removeAttr("class");
-    //   } else if ($("#pos14").attr("class") != "hide") {
-    //    $("#pos14").attr("class", "hide");
-    //    $("#pos15").removeAttr("class");
-    //   } else if ($("#pos15").attr("class") != "hide") {
-    //    $("#pos15").attr("class", "hide");
-    //    $("#pos16").removeAttr("class");
-    //   } else if ($("#pos16").attr("class") != "hide") {
-    //    $("#pos16").attr("class", "hide");
-    //    $("#pos17").removeAttr("class");
-    //   } else if ($("#pos17").attr("class") != "hide") {
-    //    $("#pos17").attr("class", "hide");
-    //    $("#pos18").removeAttr("class");
-    //   } else if ($("#pos18").attr("class") != "hide") {
-    //    $("#pos18").attr("class", "hide");
-    //    $("#pos19").removeAttr("class");
-    //   } else if ($("#pos19").attr("class") != "hide") {
-    //    $("#pos19").attr("class", "hide");
-    //    $("#pos20").removeAttr("class");
-    //   } else if ($("#pos20").attr("class") != "hide") {
-    //    $("#pos20").attr("class", "hide");
-    //    $("#pos21").removeAttr("class");
-    //   } else if ($("#pos21").attr("class") != "hide") {
-    //    $("#pos21").attr("class", "hide");
-    //    $("#pos22").removeAttr("class");
-    //   } else if ($("#pos22").attr("class") != "hide") {
-    //    $("#pos22").attr("class", "hide");
-    //    $("#pos23").removeAttr("class");
-    //   } else {
-    //    $("#pos23").attr("class", "hide");
-    //    $("#pos1").removeAttr("class");
-    //   }
-    //  }
-   
-
-
-
+  setInt () {
+    setInterval (() => this.tumble(), 150)
+  }
+  tumble() {
+    if (!this.pos1.nativeElement.classList.contains('hide')) {
+      this.pos1.nativeElement.classList.add('hide')
+      this.pos2.nativeElement.classList.remove('hide')       
+    } else if (!this.pos2.nativeElement.classList.contains('hide')) {
+      this.pos2.nativeElement.classList.add('hide')
+      this.pos3.nativeElement.classList.remove('hide')       
+    } else if (!this.pos3.nativeElement.classList.contains('hide')) {
+      this.pos3.nativeElement.classList.add('hide')
+      this.pos4.nativeElement.classList.remove('hide')       
+    } else if (!this.pos4.nativeElement.classList.contains('hide')) {
+      this.pos4.nativeElement.classList.add('hide')
+      this.pos5.nativeElement.classList.remove('hide')       
+    } else if (!this.pos5.nativeElement.classList.contains('hide')) {
+      this.pos5.nativeElement.classList.add('hide')
+      this.pos6.nativeElement.classList.remove('hide')       
+    } else if (!this.pos6.nativeElement.classList.contains('hide')) {
+      this.pos6.nativeElement.classList.add('hide')
+      this.pos7.nativeElement.classList.remove('hide')       
+    } else if (!this.pos7.nativeElement.classList.contains('hide')) {
+      this.pos7.nativeElement.classList.add('hide')
+      this.pos8.nativeElement.classList.remove('hide')       
+    } else if (!this.pos8.nativeElement.classList.contains('hide')) {
+      this.pos8.nativeElement.classList.add('hide')
+      this.pos9.nativeElement.classList.remove('hide')       
+    } else if (!this.pos9.nativeElement.classList.contains('hide')) {
+      this.pos9.nativeElement.classList.add('hide')
+      this.pos10.nativeElement.classList.remove('hide')       
+    } else if (!this.pos10.nativeElement.classList.contains('hide')) {
+      this.pos10.nativeElement.classList.add('hide')
+      this.pos11.nativeElement.classList.remove('hide')       
+    } else if (!this.pos11.nativeElement.classList.contains('hide')) {
+      this.pos11.nativeElement.classList.add('hide')
+      this.pos12.nativeElement.classList.remove('hide')       
+    } else if  (!this.pos12.nativeElement.classList.contains('hide')) {
+      this.pos12.nativeElement.classList.add('hide')
+      this.pos13.nativeElement.classList.remove('hide')       
+    } else if (!this.pos13.nativeElement.classList.contains('hide')) {
+      this.pos13.nativeElement.classList.add('hide')
+      this.pos14.nativeElement.classList.remove('hide')       
+    } else if (!this.pos14.nativeElement.classList.contains('hide')) {
+      this.pos14.nativeElement.classList.add('hide')
+      this.pos15.nativeElement.classList.remove('hide')       
+    } else if (!this.pos15.nativeElement.classList.contains('hide')) {
+      this.pos15.nativeElement.classList.add('hide')
+      this.pos16.nativeElement.classList.remove('hide')       
+    } else if (!this.pos16.nativeElement.classList.contains('hide')) {
+      this.pos16.nativeElement.classList.add('hide')
+      this.pos17.nativeElement.classList.remove('hide')       
+    } else if (!this.pos17.nativeElement.classList.contains('hide')) {
+      this.pos17.nativeElement.classList.add('hide')
+      this.pos18.nativeElement.classList.remove('hide')       
+    } else if (!this.pos18.nativeElement.classList.contains('hide')) {
+      this.pos18.nativeElement.classList.add('hide')
+      this.pos19.nativeElement.classList.remove('hide')       
+    } else if (!this.pos19.nativeElement.classList.contains('hide')) {
+      this.pos19.nativeElement.classList.add('hide')
+      this.pos20.nativeElement.classList.remove('hide')       
+    } else if (!this.pos20.nativeElement.classList.contains('hide')) {
+      this.pos20.nativeElement.classList.add('hide')
+      this.pos21.nativeElement.classList.remove('hide')       
+    } else if (!this.pos21.nativeElement.classList.contains('hide')) {
+      this.pos21.nativeElement.classList.add('hide')
+      this.pos22.nativeElement.classList.remove('hide')       
+    } else if (!this.pos22.nativeElement.classList.contains('hide')) {
+      this.pos22.nativeElement.classList.add('hide')
+      this.pos23.nativeElement.classList.remove('hide')       
+    } else  {
+      this.pos23.nativeElement.classList.add('hide')
+      this.pos1.nativeElement.classList.remove('hide')       
+    } 
+  }
+  
 }
