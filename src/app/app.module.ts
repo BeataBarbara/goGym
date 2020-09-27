@@ -8,10 +8,10 @@ import { appRoutes } from './app.routes';
 import { CommonModule } from '@angular/common';
 import { ExercisesComponent } from './exercises/exercises.component';
 import { SomersaultComponent } from './somersault/somersault.component';
-import { RunRunComponent } from './run-run/run-run.component';
 import { JumpingJackComponent } from './jumping-jack/jumping-jack.component';
 import { HopHopComponent } from './hop-hop/hop-hop.component';
 import { MoveHandsComponent } from './move-hands/move-hands.component';
+import { RunComponent } from './run/run.component';
 
 @NgModule({
   declarations: [
@@ -20,10 +20,10 @@ import { MoveHandsComponent } from './move-hands/move-hands.component';
     TumbleComponent,
     ExercisesComponent,
     SomersaultComponent,
-    RunRunComponent,
     JumpingJackComponent,
     HopHopComponent,
-    MoveHandsComponent
+    MoveHandsComponent,
+    RunComponent
   ],
   imports: [
     BrowserModule,

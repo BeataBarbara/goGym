@@ -1,20 +1,20 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RunRunComponent } from './run-run.component';
+import { RunComponent } from './run.component';
 
-describe('RunRunComponent', () => {
-  let component: RunRunComponent;
-  let fixture: ComponentFixture<RunRunComponent>;
+describe('RunComponent', () => {
+  let component: RunComponent;
+  let fixture: ComponentFixture<RunComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ RunRunComponent ]
+      declarations: [ RunComponent ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RunRunComponent);
+    fixture = TestBed.createComponent(RunComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
