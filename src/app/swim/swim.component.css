@@ -2,13 +2,10 @@ div {
     justify-content: center;
     display: flex;
     margin-top: 20px;
+    color: wheat;
 }
 
 svg {
     background-color: darkorchid;
     border-radius: 15px;
-}
-
-.hide {
-    display: none;
 }

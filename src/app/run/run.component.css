@@ -1,7 +1,14 @@
-.hide {
-    display: none;
+div {
+    justify-content: center;
+    display: flex;
+    margin-top: 20px;
 }
 
 svg {
-    background-color: blueviolet;
+    background-color: darkorchid;
+    border-radius: 15px;
+}
+
+.hide {
+    display: none;
 }

@@ -1,3 +1,5 @@
+<div>
+
 <svg height="200" width="600">
 <g #pos1 style="stroke:black;stroke-width:3">
    <polyline points="25, 60 35,85 50,95 65,85 75,60" style="fill:none"/>
@@ -60,3 +62,5 @@
    <line x1="60" y1="70" x2="60" y2="120"/>
 </g> 
  </svg>   
+
+</div>

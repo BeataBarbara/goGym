@@ -1,18 +1,21 @@
-<svg height="200" width="600">
-  <g #man>
- <polyline #legs points="35,165 50,120 65,165"   style="fill:none;stroke:black;stroke-width:3" />    
- <circle #head cx="50" cy="65" r="12"/>  
-    <g #downLeft>
-  <polyline #hands2 points="32,63 34,80 50,90 66,110 68,127"   style="fill:none;stroke:black;stroke-width:3" class="hide"/>   
- <circle #circleUpLeft cx="32" cy="63" r="5" class="hide"/>
- <circle #circleDownRight cx="68" cy="127" r="5" class="hide"/>
-    </g>   
- <g #upRight>
-    <polyline #hands points="32,127 34,110 50,90 66,80 68,63"  style="fill:none;stroke:black;stroke-width:3" />  
- <circle #circleUpRight cx="68" cy="63" r="5" style="fill:black;stroke:black;stroke-width:3"/>
- <circle #circleDownLeft cx="32" cy="127" r="5" style="fill:black;stroke:black;stroke-width:3"/>   
-    </g> 
-    <line x1="50" y1="70" x2="50" y2="120" style="stroke:black;stroke-width:3"/>
-     <line x1="50" y1="70" x2="50" y2="120" style="stroke:black;stroke-width:3"/>
-</g>
-</svg>   
+<div>
+   <svg height="200" width="600">
+   <g #man>
+   <polyline #legs points="35,165 50,120 65,165"   style="fill:none;stroke:black;stroke-width:3" />    
+   <circle #head cx="50" cy="65" r="12"/>  
+      <g #downLeft>
+   <polyline #hands2 points="32,63 34,80 50,90 66,110 68,127"   style="fill:none;stroke:black;stroke-width:3" class="hide"/>   
+   <circle #circleUpLeft cx="32" cy="63" r="5" class="hide"/>
+   <circle #circleDownRight cx="68" cy="127" r="5" class="hide"/>
+      </g>   
+   <g #upRight>
+      <polyline #hands points="32,127 34,110 50,90 66,80 68,63"  style="fill:none;stroke:black;stroke-width:3" />  
+   <circle #circleUpRight cx="68" cy="63" r="5" style="fill:black;stroke:black;stroke-width:3"/>
+   <circle #circleDownLeft cx="32" cy="127" r="5" style="fill:black;stroke:black;stroke-width:3"/>   
+      </g> 
+      <line x1="50" y1="70" x2="50" y2="120" style="stroke:black;stroke-width:3"/>
+      <line x1="50" y1="70" x2="50" y2="120" style="stroke:black;stroke-width:3"/>
+   </g>
+   </svg>
+</div>
+   
