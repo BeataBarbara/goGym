@@ -1,0 +1,81 @@
+<div>
+<svg height="400" width="600">
+ <g #pos1 style="stroke:black;stroke-width:3"> 
+   <polyline points="20, 70  50,95  80,70" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+   <path d="M 20 70 Q 20 20 50 20 Q 85 20 80 70 " style="fill:none;stroke:grey"/>
+</g>  
+<g #pos2 class="hide" style="stroke:black;stroke-width:3">
+   <polyline points="18, 80  50,95  82,80" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+  <path d="M 18 80 Q 20 35 50 35 Q 85 35 82 80 " style="fill:none;stroke:grey"/>
+</g>   
+<g #pos3 class="hide"  style="stroke:black;stroke-width:3">
+   <polyline points="15, 95  50,95  85,95" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+   <path d="M 15 95 Q 20 55 50 55 Q 85 55 85 95 " style="fill:none;stroke:grey"/>
+</g>  
+<g #pos4 class="hide"  style="stroke:black;stroke-width:3">
+   <polyline points="15, 95  50,95  85,95" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+   <path d="M 15 95 Q 20 115 50 115 Q 85 115 85 95 " style="fill:none;stroke:grey"/>
+</g>   
+<g #pos5 class="hide"  style="stroke:black;stroke-width:3">
+   <polyline points="18, 109  50,99  82,109" style="fill:none"/>
+   <polyline points="40,170 50,124 60,170"   style="fill:none" />   
+   <circle cx="50" cy="74" r="9"/>
+   <line x1="50" y1="72" x2="50" y2="124"/>
+   <path d="M 18 109 Q 20 130 50 130 Q 85 130 82 109 " style="fill:none;stroke:grey"/>
+</g>   
+<g #pos6 class="hide"  style="stroke:black;stroke-width:3">
+   <polyline points="21, 117  50,99  78,117" style="fill:none"/>
+   <polyline points="40,155 42,136 50,124 58,136 60,155"   style="fill:none" />   
+   <circle cx="50" cy="74" r="9"/>
+   <line x1="50" y1="72" x2="50" y2="124"/>
+   <path d="M 21 117 Q 20 164 50 164 Q 85 164 78 117" style="fill:none;stroke:grey"></path>
+</g> 
+<g #pos7 class="hide"  style="stroke:black;stroke-width:3">
+   <polyline points="21, 117  50,99  78,117" style="fill:none"/>
+   <polyline points="40,155 42,136 50,124 58,136 60,155"   style="fill:none" />   
+   <circle cx="50" cy="74" r="9"/>
+   <line x1="50" y1="72" x2="50" y2="124"/>
+   <path d="M 21 117 Q 20 164 50 164 Q 85 164 78 117" style="fill:none;stroke:grey"></path>
+</g> 
+<g #pos8 class="hide"  style="stroke:black;stroke-width:3">
+   <path d="M 18 109 Q 20 130 50 130 Q 85 130 82 109 " style="fill:none;stroke:grey"/> 
+   <polyline points="18, 109  50,99  82,109" style="fill:none"/>
+   <polyline points="40,170 50,124 60,170"   style="fill:none" />   
+   <circle cx="50" cy="74" r="9"/>
+   <line x1="50" y1="72" x2="50" y2="124"/>
+</g>  
+<g #pos9 class="hide"  style="stroke:black;stroke-width:3">
+   <path d="M 15 95 Q 20 115 50 115 Q 85 115 85 95 " style="fill:none;stroke:grey"/>
+   <polyline points="15, 95  50,95  85,95" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+</g>
+<g #pos10 class="hide"  style="stroke:black;stroke-width:3">
+   <path d="M 15 95 Q 20 55 50 55 Q 85 55 85 95 " style="fill:none;stroke:grey"/>
+   <polyline points="15, 95  50,95  85,95" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+</g>
+  <g #pos11 class="hide"  style="stroke:black;stroke-width:3">
+   <polyline points="18, 80  50,95  82,80" style="fill:none"/>
+   <polyline points="40,170 50,120 60,170"   style="fill:none" />   
+   <circle cx="50" cy="70" r="9"/>
+   <line x1="50" y1="70" x2="50" y2="120"/>
+  <path d="M 18 80 Q 20 35 50 35 Q 85 35 82 80 " style="fill:none;stroke:grey"/>
+</g>
+</svg>
+</div>
