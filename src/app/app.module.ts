@@ -16,6 +16,7 @@ import { VolleyballComponent } from './volleyball/volleyball.component';
 import { SwimComponent } from './swim/swim.component';
 import { SquashComponent } from './squash/squash.component';
 import { SkippingRopeComponent } from './skipping-rope/skipping-rope.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,12 +32,15 @@ import { SkippingRopeComponent } from './skipping-rope/skipping-rope.component';
     VolleyballComponent,
     SwimComponent,
     SquashComponent,
-    SkippingRopeComponent
+    SkippingRopeComponent,
+ 
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
     CommonModule,
+    FormsModule, 
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -6,6 +6,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./tumble.component.css']
 })
 export class TumbleComponent implements OnInit {
+velocity =150;
+
   @ViewChild('pos1') pos1: ElementRef;
   @ViewChild('pos2') pos2: ElementRef;
   @ViewChild('pos3') pos3: ElementRef;
@@ -30,13 +32,16 @@ export class TumbleComponent implements OnInit {
   @ViewChild('pos22') pos22: ElementRef;
   @ViewChild('pos23') pos23: ElementRef;
 
-  ngOnInit(): void {
-    this.setInt()
+  ngOnInit() {
+    this.setInt(this.velocity)
   }
-  setInt () {
-    setInterval (() => this.tumble(), 150)
+  
+
+  setInt (vel) {
+    setInterval (() => this.tumble(), vel)
   }
   tumble() {
+    console.info(this.velocity)
     if (!this.pos1.nativeElement.classList.contains('hide')) {
       this.pos1.nativeElement.classList.add('hide')
       this.pos2.nativeElement.classList.remove('hide')       
@@ -109,4 +114,16 @@ export class TumbleComponent implements OnInit {
     } 
   }
   
+  doSlowly() {
+    this.velocity=500;
+  }
+  doMedium() {
+    this.velocity=300;
+  }
+  doFast() {
+    this.velocity=150;
+  }
+  doVeryFast() {
+    this.velocity=50;
+  }
 }

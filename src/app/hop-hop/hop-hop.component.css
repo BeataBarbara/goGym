@@ -4,9 +4,13 @@ div {
     margin-top: 20px;
 }
 
+h2 {
+    color: wheat;
+}
+
 svg {
-    background-color: darkorchid;
     border-radius: 15px;
+    background-color: darkorchid;
 }
 
 .hopHop {
