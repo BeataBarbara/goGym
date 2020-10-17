@@ -9,3 +9,21 @@ svg {
     background-color: darkorchid;
     border-radius: 15px;
 }
+
+.hop {
+    animation: hop 2s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes hop {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    10% {
+        transform: translate(0px, -20px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

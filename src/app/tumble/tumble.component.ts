@@ -35,7 +35,6 @@ velocity =150;
   ngOnInit() {
     this.setInt(this.velocity)
   }
-  
 
   setInt (vel) {
     setInterval (() => this.tumble(), vel)

@@ -6,6 +6,59 @@ div {
 }
 
 svg {
-    background-color: darkorchid;
     border-radius: 15px;
+    background-color: powderblue;
+}
+
+.hide {
+    display: none;
+}
+
+.transform {
+    transform: translateY(90px);
+}
+
+.right {
+    animation: moveRight 1s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveRight {
+    0% {
+        transform: translateX(-10px);
+    }
+    100% {
+        transform: translateX(10px);
+    }
+}
+
+.left {
+    animation: moveLeft 0.7s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(-10px);
+    }
+}
+
+.left2 {
+    animation: moveLeft 0.3s;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        transform: translateX(15px);
+    }
+    100% {
+        transform: translateX(-15px);
+    }
 }
