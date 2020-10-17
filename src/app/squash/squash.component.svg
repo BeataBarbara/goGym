@@ -1,0 +1,51 @@
+<div>
+<svg height="200" width="600">
+   <g style="stroke:black;stroke-width:3" #pos1>
+  <polyline  points="25, 117 35,100 48,90 67,90 80,74" style="fill:none" /> 
+  <polyline points="30,160 50,117 60,160" style="fill:none" />
+  <circle cx="42" cy="67" r="9"/>
+  <line x1="42" y1="67" x2="50" y2="117"/>
+        <g style="fill:grey;stroke:purple;stroke-width:2">
+   <line x1='70' y1='50' x2='80' y2='85'/>
+    <ellipse cx="70" cy="50" rx="5" ry="13"/>
+  </g>
+ </g>
+  <g style="stroke:black;stroke-width:3" #pos2 class="hide">
+  <polyline  points="20, 75 30,95 50,95  85,100" style="fill:none" />
+  <polyline points="35,160 50,120 65,160" style="fill:none" />
+  <circle cx="50" cy="70"  r="9" />
+  <line x1="50" y1="70" x2="50" y2="120" />
+     <g style="fill:grey;stroke:purple;stroke-width:2">
+   <line x1='80' y1='65' x2='82' y2='105'/>
+    <ellipse cx="80" cy="65" rx="5" ry="13"/>
+  </g>
+ </g>
+ <g style="stroke:black;stroke-width:3" #pos3 class="hide">
+  <polyline points="25,80  53,100  75,125" style="fill:none" />
+  <polyline points="25,160 30,140 50,130 65,140 70,160" style="fill:none" />
+  <circle cx="55" cy="80" r="9" />
+  <line x1="55" y1="80" x2="50" y2="130" />
+  <g style="fill:grey;stroke:purple;stroke-width:2">
+   <line x1='83' y1='92' x2='73' y2='127'/>
+    <ellipse cx="83" cy="92" rx="5" ry="13"/>
+  </g>
+ </g>
+ <g style="stroke:black;stroke-width:10">
+  <line x1='350' y1='0' x2='350' y2='200'/>
+ </g>
+  <g>
+  <circle cx='' cy='' r='5'/>
+   <animateMotion dur='4.5s' repeatCount="indefinite" calcMode="paced"
+  path="
+   M 70 50 
+   Q 290 1 350 43 
+   Q 240 250 80 65 
+   Q 176 17 348 126  
+   Q 144 200 83 92 
+   Q 247 50 350 153 
+   Q 297 190 70 51 " 
+   />
+ </g>
+
+  </svg>
+</div>

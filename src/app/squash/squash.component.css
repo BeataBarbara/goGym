@@ -9,3 +9,7 @@ svg {
     background-color: darkorchid;
     border-radius: 15px;
 }
+
+.hide {
+    display: none;
+}
