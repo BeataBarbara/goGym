@@ -40,7 +40,6 @@ velocity =150;
     setInterval (() => this.tumble(), vel)
   }
   tumble() {
-    console.info(this.velocity)
     if (!this.pos1.nativeElement.classList.contains('hide')) {
       this.pos1.nativeElement.classList.add('hide')
       this.pos2.nativeElement.classList.remove('hide')       
