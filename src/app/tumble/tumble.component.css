@@ -12,3 +12,7 @@ svg {
 .hide {
     display: none;
 }
+
+h1 {
+    background-color: wheat;
+}

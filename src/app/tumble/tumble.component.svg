@@ -1,12 +1,15 @@
 <div>
-<button #slow (click)='doSlowly()'>Powoli </button>
-<button #medium (click)='doMedium()'>Średnio</button>
-<button #fast (click)='doFast()'>Szybko</button>
-<button #veryfast (click)='doVeryFast()'>Bardzo szybko</button>
-
+<button #slow (click)='doSlowly(1000)'>Powoli </button>
+<button #medium (click)='doMedium(500)'>Średnio</button>
+<button #fast (click)='doFast(100)'>Szybko</button>
+<button #veryfast (click)='doVeryFast(10)'>Bardzo szybko</button>
+</div>
+<div>
+<button #veryfast (click)='reset()'>reset</button>
 </div>
 <div>
 <svg height="200" width="800">
+
   <g #pos1 style="stroke:black;stroke-width:3">
    <polyline points="25, 105 35,85 50,95 65,85 75,105" style="fill:none" />
    <polyline points="30,160 50,120 70,160" style="fill:none" />

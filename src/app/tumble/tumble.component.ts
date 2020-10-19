@@ -5,8 +5,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   templateUrl: './tumble.component.svg',
   styleUrls: ['./tumble.component.css']
 })
-export class TumbleComponent implements OnInit {
-velocity =150;
+export class TumbleComponent  {
+velocity;
+velocity1;
+velocity2;
+velocity3;
+velocity4;
 
   @ViewChild('pos1') pos1: ElementRef;
   @ViewChild('pos2') pos2: ElementRef;
@@ -32,13 +36,32 @@ velocity =150;
   @ViewChild('pos22') pos22: ElementRef;
   @ViewChild('pos23') pos23: ElementRef;
 
-  ngOnInit() {
-    this.setInt(this.velocity)
+  reset() {
+    clearInterval(this.velocity)
+    console.log(this.velocity)
   }
 
-  setInt (vel) {
-    setInterval (() => this.tumble(), vel)
+  doSlowly(velocity1) {
+    clearInterval(this.velocity)
+    this.velocity =setInterval (() => this.tumble(), velocity1)
+    console.log(this.velocity)
   }
+  doMedium(velocity2) {
+    clearInterval(this.velocity)
+    this.velocity =setInterval (() => this.tumble(), velocity2)
+    console.log(this.velocity)
+  }
+  doFast(velocity3) {
+    clearInterval(this.velocity)
+    this.velocity =setInterval (() => this.tumble(), velocity3)
+    console.log(this.velocity)
+  }
+  doVeryFast(velocity4) {
+    clearInterval(this.velocity)
+    this.velocity =setInterval (() => this.tumble(), velocity4)
+    console.log(this.velocity)
+  }
+
   tumble() {
     if (!this.pos1.nativeElement.classList.contains('hide')) {
       this.pos1.nativeElement.classList.add('hide')
@@ -112,16 +135,5 @@ velocity =150;
     } 
   }
   
-  doSlowly() {
-    this.velocity=500;
-  }
-  doMedium() {
-    this.velocity=300;
-  }
-  doFast() {
-    this.velocity=150;
-  }
-  doVeryFast() {
-    this.velocity=50;
-  }
+
 }
