@@ -1,5 +1,5 @@
-<div>
-<svg height='300' width='400'>
+<div >
+<svg height='300' width='400' title="two men playing volleyball" aria-label="two men playing volleyball">
  <g #man1 class='hop' style="stroke:black;stroke-width:3">
   <circle cx='40' cy='110' r='10' />
   <line x1='40' y1='110' x2='40' y2='160' />

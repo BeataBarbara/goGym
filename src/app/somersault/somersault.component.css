@@ -7,8 +7,23 @@ div {
 svg {
     background-color: darkorchid;
     border-radius: 15px;
+    margin-top: 13%;
+}
+
+g {
+    width: 200%;
+    height: 200%
 }
 
 .hide {
     display: none;
+}
+
+.input {
+    background-color: wheat;
+    font-size: 1.7em;
+}
+
+input {
+    font-size: 1.4rem;
 }

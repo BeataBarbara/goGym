@@ -6,6 +6,10 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./somersault.component.css']
 })
 export class SomersaultComponent implements OnInit {
+
+  velocity: any;
+  vel: any = 300;
+
   @ViewChild('pos1') pos1: ElementRef;
   @ViewChild('pos2') pos2: ElementRef;
   @ViewChild('pos3') pos3: ElementRef;
@@ -16,14 +20,19 @@ export class SomersaultComponent implements OnInit {
   @ViewChild('pos8') pos8: ElementRef;
   @ViewChild('pos9') pos9: ElementRef;
   @ViewChild('pos10') pos10: ElementRef;
+  @ViewChild('velocity') myVelocity: ElementRef
 
-  ngOnInit(): void {
-    this.setInt()
+  ngOnInit() {
+    this.change(this.vel);
   }
-  setInt () {
-    setInterval (() => this.somersault(), 150)
+
+  change(myVelocity: number) {
+    clearInterval(this.velocity)
+    this.velocity = setInterval (() => this.somersault(), myVelocity)
   }
+
   somersault() {
+    console.log(this.velocity)
     if (!this.pos1.nativeElement.classList.contains('hide')) {
       this.pos1.nativeElement.classList.add('hide')
       this.pos2.nativeElement.classList.remove('hide')       

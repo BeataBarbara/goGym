@@ -5,12 +5,12 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   templateUrl: './tumble.component.svg',
   styleUrls: ['./tumble.component.css']
 })
-export class TumbleComponent  {
-velocity;
-velocity1;
-velocity2;
-velocity3;
-velocity4;
+export class TumbleComponent implements OnInit {
+  velocity:  any;
+  velocity1: any;
+  velocity2: any;
+  velocity3: any;
+  velocity4: any;
 
   @ViewChild('pos1') pos1: ElementRef;
   @ViewChild('pos2') pos2: ElementRef;
@@ -36,6 +36,10 @@ velocity4;
   @ViewChild('pos22') pos22: ElementRef;
   @ViewChild('pos23') pos23: ElementRef;
 
+  ngOnInit() {
+    this.doMedium(200);
+  }
+
   reset() {
     clearInterval(this.velocity)
     console.log(this.velocity)
@@ -44,22 +48,19 @@ velocity4;
   doSlowly(velocity1) {
     clearInterval(this.velocity)
     this.velocity =setInterval (() => this.tumble(), velocity1)
-    console.log(this.velocity)
   }
+
   doMedium(velocity2) {
     clearInterval(this.velocity)
     this.velocity =setInterval (() => this.tumble(), velocity2)
-    console.log(this.velocity)
   }
   doFast(velocity3) {
     clearInterval(this.velocity)
     this.velocity =setInterval (() => this.tumble(), velocity3)
-    console.log(this.velocity)
   }
   doVeryFast(velocity4) {
     clearInterval(this.velocity)
     this.velocity =setInterval (() => this.tumble(), velocity4)
-    console.log(this.velocity)
   }
 
   tumble() {

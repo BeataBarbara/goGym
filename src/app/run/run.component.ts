@@ -12,6 +12,13 @@ export class RunComponent implements OnInit {
   @ViewChild('pos3') pos3: ElementRef;
   @ViewChild('pos4') pos4: ElementRef;
   @ViewChild('pos5') pos5: ElementRef;
+  @ViewChild('motionPath') motionPath: ElementRef;
+
+  set(val:string) {
+    this.motionPath.nativeElement.setAttribute('dur', val)
+  }
+
+
 
   ngOnInit(): void {
     this.setInt()

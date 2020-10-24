@@ -1,12 +1,3 @@
-/*!
- * Materialize v1.0.0 (http://materializecss.com)
- * Copyright 2014-2017 Materialize
- * MIT License (https://raw.githubusercontent.com/Dogfalo/materialize/master/LICENSE)
- */
-
-
-/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
-
 html {
     line-height: 1.15;
     -ms-text-size-adjust: 100%;
@@ -167,10 +158,6 @@ nav {
     line-height: 56px
 }
 
-nav a {
-    color: #000
-}
-
 nav [class*=mdi-],
 nav [class^=mdi-] {
     display: block;
@@ -249,16 +236,6 @@ html {
         font-size: 15px
     }
 }
-
-
-/*!
- * Waves v0.6.0
- * http://fian.my.id/Waves
- *
- * Copyright 2014 Alfiana E. Sibuea and other contributors
- * Released under the MIT license
- * https://github.com/fians/Waves/blob/master/LICENSE
- */
 
 ::-webkit-input-placeholder {
     color: #d1d1d1
@@ -728,59 +705,5 @@ html {
     }
     to {
         opacity: 0
-    }
-}
-
-@-webkit-keyframes pulse-animation {
-    0% {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5)
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5)
-    }
-}
-
-@keyframes pulse-animation {
-    0% {
-        opacity: 1;
-        -webkit-transform: scale(1);
-        transform: scale(1)
-    }
-    50% {
-        opacity: 0;
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5)
-    }
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.5);
-        transform: scale(1.5)
-    }
-}
-
-@media only screen and (max-width:660px) {
-    nav .brand-logo {
-        font-size: 1.6rem
-    }
-}
-
-@media only screen and (max-width:550px) {
-    nav .brand-logo {
-        font-size: 1.3rem
-    }
-}
-
-@media only screen and (max-width:440px) {
-    nav .brand-logo {
-        font-size: 1.2rem
     }
 }
