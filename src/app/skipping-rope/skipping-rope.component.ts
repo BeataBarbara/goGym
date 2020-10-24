@@ -6,7 +6,8 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./skipping-rope.component.css']
 })
 export class SkippingRopeComponent implements OnInit {
-  velocity =150;
+  velocity: any;
+  vel: any = 100;
 
   @ViewChild('pos1') pos1: ElementRef;
   @ViewChild('pos2') pos2: ElementRef;
@@ -21,12 +22,14 @@ export class SkippingRopeComponent implements OnInit {
   @ViewChild('pos11') pos11: ElementRef;
 
   ngOnInit() {
-    this.setInt(this.velocity)
+    this.change(this.vel)
   }
 
-  setInt (vel) {
-    setInterval (() => this.skippingRope(), vel)
+  change(myVelocity: number) {
+    clearInterval(this.velocity)
+    this.velocity = setInterval (() => this.skippingRope(), myVelocity)
   }
+
   skippingRope() {
     console.info(this.velocity)
     if (!this.pos1.nativeElement.classList.contains('hide')) {

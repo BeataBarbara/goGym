@@ -1,4 +1,9 @@
 <div>
+   <label>Jaqk szybko skakać?
+      <input #velocity type="number" name="velocity" placeholder="200" formControlName="szybkosc" aria-label="velocity of skipping" #myVelocity (change)="change(myVelocity.value)" (keyup.enter)="change(myVelocity.value)" />
+   </label> 
+</div>
+<div>
 <svg height="400" width="600">
  <g #pos1 style="stroke:black;stroke-width:3"> 
    <polyline points="20, 70  50,95  80,70" style="fill:none"/>
