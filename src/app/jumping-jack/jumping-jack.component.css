@@ -12,3 +12,7 @@ svg {
 .hide {
     display: none;
 }
+
+circle {
+    fill: black;
+}

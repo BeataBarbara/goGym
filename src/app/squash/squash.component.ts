@@ -6,19 +6,28 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./squash.component.css']
 })
 export class SquashComponent implements OnInit {
-  velocity =1500;
+  velocity:any;
+  vel: any = 1500;
+  velocityBall: string;
+  velocityMan: number;
 
   @ViewChild('pos1') pos1: ElementRef;
   @ViewChild('pos2') pos2: ElementRef;
   @ViewChild('pos3') pos3: ElementRef;
+  @ViewChild('motionPath') motionPath: ElementRef;
 
   ngOnInit() {
-    this.setInt(this.velocity)
+    this.setMan(this.vel);
   }
 
-  setInt (vel) {
-    setInterval (() => this.playSquash(), vel)
+  setMan(velocityMan: number) {
+    clearInterval(this.velocity)
+    this.velocity = setInterval (() => this.playSquash(),velocityMan) 
   }
+  setBall(velocityBall) {
+    this.motionPath.nativeElement.setAttribute('dur', velocityBall) 
+  }
+
   playSquash() {
     if (!this.pos1.nativeElement.classList.contains('hide')) {
       this.pos1.nativeElement.classList.add('hide')

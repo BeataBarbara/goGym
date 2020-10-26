@@ -42,7 +42,6 @@ export class TumbleComponent implements OnInit {
 
   reset() {
     clearInterval(this.velocity)
-    console.log(this.velocity)
   }
 
   doSlowly(velocity1) {

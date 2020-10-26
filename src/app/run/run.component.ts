@@ -18,8 +18,6 @@ export class RunComponent implements OnInit {
     this.motionPath.nativeElement.setAttribute('dur', val)
   }
 
-
-
   ngOnInit(): void {
     this.setInt()
   }

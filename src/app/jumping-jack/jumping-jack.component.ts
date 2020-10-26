@@ -6,25 +6,39 @@ import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
   styleUrls: ['./jumping-jack.component.css']
 })
 export class JumpingJackComponent implements OnInit{
-  @ViewChild('hands') hands: ElementRef;
-  @ViewChild('hands2') hands2: ElementRef;
-  @ViewChild('legs') legs: ElementRef;
-  @ViewChild('legs2') legs2: ElementRef;
+  @ViewChild('man') man: ElementRef;
+  @ViewChild('man2') man2: ElementRef;
+  @ViewChild('man3') man3: ElementRef;
+  @ViewChild('man4') man4: ElementRef;
   
   ngOnInit(): void {
     this.jump()
   }
 jumpingJack() {
-  if (this.hands.nativeElement.classList.contains('hide')) {
-    this.hands.nativeElement.classList.remove('hide')
-    this.hands2.nativeElement.classList.add('hide')
-    this.legs.nativeElement.classList.remove('hide')
-    this.legs2.nativeElement.classList.add('hide')
-  } else {
-    this.hands2.nativeElement.classList.remove('hide')
-    this.hands.nativeElement.classList.add('hide')
-    this.legs2.nativeElement.classList.remove('hide')
-    this.legs.nativeElement.classList.add('hide')
+  // if (this.hands.nativeElement.classList.contains('hide')) {
+  //   this.hands.nativeElement.classList.remove('hide')
+  //   this.hands2.nativeElement.classList.add('hide')
+  //   this.legs.nativeElement.classList.remove('hide')
+  //   this.legs2.nativeElement.classList.add('hide')
+  // } else {
+  //   this.hands2.nativeElement.classList.remove('hide')
+  //   this.hands.nativeElement.classList.add('hide')
+  //   this.legs2.nativeElement.classList.remove('hide')
+  //   this.legs.nativeElement.classList.add('hide')
+  // }
+
+  if (!this.man.nativeElement.classList.contains('hide')) {
+    this.man.nativeElement.classList.add('hide');
+    this.man2.nativeElement.classList.remove('hide');
+  } else if (!this.man2.nativeElement.classList.contains('hide')) {
+    this.man2.nativeElement.classList.add('hide');
+    this.man3.nativeElement.classList.remove('hide');
+  } else if (!this.man3.nativeElement.classList.contains('hide')) {
+    this.man3.nativeElement.classList.add('hide');
+    this.man4.nativeElement.classList.remove('hide');
+  } else if (!this.man4.nativeElement.classList.contains('hide')) {
+    this.man4.nativeElement.classList.add('hide');
+    this.man.nativeElement.classList.remove('hide');
   }
 }
 jump () {

@@ -6,7 +6,8 @@
 <button (click)="set('8s')">8s</button>
 <button (click)="set('10s')">10s</button>
 </label>
-
+</div>
+<div>
 <svg height="400" width="1150">
 <g #men >
      <line x1="50" y1="67" x2="50" y2="120" style="stroke:black;stroke-width:2"/>
