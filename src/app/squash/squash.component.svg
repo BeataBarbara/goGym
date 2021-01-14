@@ -1,14 +1,5 @@
 <div>
-<label for="">
-<button (click)="setMan(500)"  (click)="setBall('1.5s')" >1,5s</button>
-<button (click)="setMan(1000)" (click)="setBall('3s')" >3s</button>
-<button (click)="setMan(1500)" (click)="setBall('4.5s')" >4,5s</button>
-<button (click)="setMan(2000)" (click)="setBall('6s')" >6s</button>
-<button (click)="setMan(3000)" (click)="setBall('9s')" >9s</button>
-</label>
-</div>
-<div>
-<svg height="200" width="600">
+<svg height="200" width="400" transform="scale(2.8)">
    <g style="stroke:black;stroke-width:3" #pos1>
   <polyline  points="25, 117 35,100 48,90 67,90 80,74" style="fill:none" /> 
   <polyline points="30,160 50,117 60,160" style="fill:none" />

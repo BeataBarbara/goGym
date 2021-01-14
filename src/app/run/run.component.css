@@ -12,3 +12,8 @@ svg {
 .hide {
     display: none;
 }
+
+g {
+    width: 200%;
+    height: 200%
+}

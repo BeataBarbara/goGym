@@ -1,7 +1,21 @@
 div {
-    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+    line-height: 40px;
+}
+
+.container {
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+}
+
+.container div:nth-child(3) {
+    margin-top: 170px;
+}
+
+.container div:nth-child(1) {
+    margin-bottom: 0px;
+    margin-top: 0px;
 }
 
 svg {

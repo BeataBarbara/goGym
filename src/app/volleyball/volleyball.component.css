@@ -5,9 +5,15 @@ div {
     color: wheat;
 }
 
+g {
+    width: 300%;
+    height: 600%
+}
+
 svg {
     background-color: darkorchid;
     border-radius: 15px;
+    margin-top: 110px;
 }
 
 .hop {

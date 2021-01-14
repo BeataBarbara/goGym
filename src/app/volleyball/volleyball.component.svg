@@ -1,5 +1,12 @@
-<div >
-<svg height='300' width='400' title="two men playing volleyball" aria-label="two men playing volleyball">
+<div>
+<label for="">
+<button (click)="setMan(500)" (click)="setBall('1s')">Bardzo szybko</button>
+<button (click)="setMan(750)" (click)="setBall('1.5s')">szybko</button>
+<button (click)="setMan(1000)" (click)="setBall('2s')">wolno</button>
+<button (click)="setMan(2000)" (click)="setBall('4s')">Bardzo wolno</button>
+</label></div>
+<div >  
+<svg height='300' width='400' title="two men playing volleyball" aria-label="two men playing volleyball" transform="scale(1.9)">
  <g #man1 class='hop' style="stroke:black;stroke-width:3">
   <circle cx='40' cy='110' r='10' />
   <line x1='40' y1='110' x2='40' y2='160' />
@@ -18,10 +25,10 @@
   </g>
    <g>
   <circle cx='' cy='' r='10' />
-  <animateMotion  
+  <animateMotion  #motionPath
     dur="2s" 
     repeatCount="indefinite" 
-    calcMode="paced"
+    calcMode="spline"
     path="M62, 90 A 150 200 0 0 1 278 90 A 150 200 0 0 0 62 90"
     />
     </g>

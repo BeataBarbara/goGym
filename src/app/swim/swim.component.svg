@@ -1,5 +1,5 @@
 <div>
-<svg width='700' height='230'>
+<svg width='700' height='230' transform="scale(2.2)">
  <g #man >
   <animateMotion dur="20s" repeatCount="indefinite" calcMode="paced"
   path="M0, 110 A 20 12 0 1 1 80 110 A 20 12 0 1 1 160 110 A 20 12 0 1 1 240 110 A 20 12 0 1 1 320 110 A 20 12 0 1 1 400 110 A 20 12 0 1 1 480 110 A 20 12 0 1 1 560 110 A 20 12 0 1 1 640 110 A 20 12 0 1 0 560 110 A 20 12 0 1 0 480 110 A 20 12 0 1 0 400 110  A 20 12 0 1 0 320 110 A 20 12 0 1 0 240 110 A 20 12 0 1 0 160 110 A 20 12 0 1 0 80 110 A 20 12 0 1 0 0 110   "

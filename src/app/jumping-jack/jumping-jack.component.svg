@@ -1,29 +1,29 @@
 
 <div>
-<svg height="200" width="600">
+<svg height="140" width="100" transform="scale(3.5)">
     <g #man style="fill:none;stroke:black;stroke-width:3">
-      <polyline points="25,70 50,95 75,70" />
-      <polyline points="30,160 50,120 70,160" />
-      <circle cx="50"  cy="65"  r="12" />
-      <line x1="50" y1="70" x2="50" y2="120" />
+      <polyline points="25,40 50,65 75,40" />
+      <polyline points="30,130 50,90 70,130" />
+      <circle cx="50"  cy="35"  r="12" />
+      <line x1="50" y1="40" x2="50" y2="90" />
     </g>
     <g #man2 class="hide" style="fill:none;stroke:black;stroke-width:3">
-      <polyline points="20,85 50,85 80,85" />
-      <polyline points="30,150 50,110 70,150" />
-      <circle cx="50"  cy="55"  r="12" />
-      <line x1="50" y1="60" x2="50" y2="110" />
+      <polyline points="20,55 50,55 80,55" />
+      <polyline points="30,120 50,80 70,120" />
+      <circle cx="50"  cy="25"  r="12" />
+      <line x1="50" y1="30" x2="50" y2="80" />
     </g>
     <g #man3 class="hide" style="fill:none;stroke:black;stroke-width:3">
-      <polyline points="42,125 50,95 58,125" />
-      <polyline points="47, 165 50,120 53,165" />
-      <circle cx="50"  cy="65"  r="12" />
-      <line x1="50" y1="70" x2="50" y2="120" />
+      <polyline points="42,95 50,65 58,95" />
+      <polyline points="47, 135 50,90 53,135" />
+      <circle cx="50"  cy="35"  r="12" />
+      <line x1="50" y1="40" x2="50" y2="90" />
     </g>
     <g #man4 class="hide" style="fill:none;stroke:black;stroke-width:3">
-      <polyline points="20,85 50,85 80,85" />
-      <polyline points="30,150 50,110 70,150" />
-      <circle cx="50"  cy="55"  r="12" />
-      <line x1="50" y1="60" x2="50" y2="110" />
+      <polyline points="20,55 50,55 80,55" />
+      <polyline points="30,120 50,80 70,120" />
+      <circle cx="50"  cy="25"  r="12" />
+      <line x1="50" y1="30" x2="50" y2="80" />
     </g>
   </svg>
 </div>

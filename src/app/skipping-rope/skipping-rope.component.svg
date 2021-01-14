@@ -4,7 +4,7 @@
    </label> 
 </div>
 <div>
-<svg height="400" width="600">
+<svg height="180" width="100" transform="scale(3)">
  <g #pos1 style="stroke:black;stroke-width:3"> 
    <polyline points="20, 70  50,95  80,70" style="fill:none"/>
    <polyline points="40,170 50,120 60,170"   style="fill:none" />   

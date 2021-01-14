@@ -8,7 +8,7 @@
 </label>
 </div>
 <div>
-<svg height="400" width="1150">
+<svg height="400" width="1150"   transform="scale(1.2)">
 <g #men >
      <line x1="50" y1="67" x2="50" y2="120" style="stroke:black;stroke-width:2"/>
      <circle cx="50" cy="71" r="9"  style="fill:black"/> -->

@@ -14,19 +14,12 @@ export class JumpingJackComponent implements OnInit{
   ngOnInit(): void {
     this.jump()
   }
-jumpingJack() {
-  // if (this.hands.nativeElement.classList.contains('hide')) {
-  //   this.hands.nativeElement.classList.remove('hide')
-  //   this.hands2.nativeElement.classList.add('hide')
-  //   this.legs.nativeElement.classList.remove('hide')
-  //   this.legs2.nativeElement.classList.add('hide')
-  // } else {
-  //   this.hands2.nativeElement.classList.remove('hide')
-  //   this.hands.nativeElement.classList.add('hide')
-  //   this.legs2.nativeElement.classList.remove('hide')
-  //   this.legs.nativeElement.classList.add('hide')
-  // }
 
+  jump () {
+    setInterval (() => this.jumpingJack(), 200)
+  }
+
+jumpingJack() {
   if (!this.man.nativeElement.classList.contains('hide')) {
     this.man.nativeElement.classList.add('hide');
     this.man2.nativeElement.classList.remove('hide');
@@ -40,8 +33,5 @@ jumpingJack() {
     this.man4.nativeElement.classList.add('hide');
     this.man.nativeElement.classList.remove('hide');
   }
-}
-jump () {
-  setInterval (() => this.jumpingJack(), 200)
 }
 }

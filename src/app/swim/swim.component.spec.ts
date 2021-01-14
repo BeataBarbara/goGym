@@ -12,7 +12,6 @@ describe('SwimComponent', () => {
     })
     .compileComponents();
   });
-
   beforeEach(() => {
     fixture = TestBed.createComponent(SwimComponent);
     component = fixture.componentInstance;

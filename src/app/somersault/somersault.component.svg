@@ -4,7 +4,7 @@
    </label> 
 </div>   
 <div>
-<svg height="200" width="200" transform="scale(4)" title="a man doing somersault" aria-label="a man doing somersault">
+<svg height="170" width="200" transform="scale(3)" title="a man doing somersault" aria-label="a man doing somersault">
 <g #pos1 style="stroke:black;stroke-width:3" >
    <polyline points="25, 60 35,85 50,95 65,85 75,60" style="fill:none"/>
    <polyline points="30,160 50,120 70,160"   style="fill:none" />   

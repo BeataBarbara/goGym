@@ -1,7 +1,14 @@
 div {
-    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
     display: flex;
-    margin-top: 20px;
+    align-items: center;
+}
+
+.container div:nth-child(2) {
+    margin-top: 80px;
 }
 
 h2 {

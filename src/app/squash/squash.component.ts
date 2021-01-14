@@ -24,6 +24,7 @@ export class SquashComponent implements OnInit {
     clearInterval(this.velocity)
     this.velocity = setInterval (() => this.playSquash(),velocityMan) 
   }
+  
   setBall(velocityBall) {
     this.motionPath.nativeElement.setAttribute('dur', velocityBall) 
   }

@@ -1,7 +1,8 @@
 div {
     justify-content: center;
+    align-items: center;
     display: flex;
-    margin-top: 20px;
+    margin-top: 12em;
 }
 
 svg {
@@ -15,4 +16,9 @@ svg {
 
 circle {
     fill: black;
+}
+
+g {
+    width: 200%;
+    height: 200%
 }
